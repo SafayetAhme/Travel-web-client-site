@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 
 
 const Blog = () => {
     return (
         <div className="px-12">
+            <Helmet>
+                <title>Travel / Blog</title>
+            </Helmet>
             <div className="">
                 <div className="text-center">
                     <div className="w-full">

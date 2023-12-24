@@ -1,15 +1,23 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 
 const AboutUs = () => {
     return (
         <div>
+            <Helmet>
+                <title>Travel / About Us</title>
+            </Helmet>
             <div className="hero mb-16" style={{ backgroundImage: 'url(https://i.pinimg.com/564x/bf/46/9a/bf469ae026d5a9388c9877e788697ec8.jpg)' }}>
                 <div className=""></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md py-12">
                         <h1 className="mb-5 text-white text-4xl font-bold">About Us</h1>
-                        <button className="bg-[#12ced8] px-6 text-white py-2 rounded-lg"><Link to="/">Back to Home</Link></button>
+                        <div className="card-actions justify-end">
+                            <Link to="/">
+                                <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">Back to Home</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

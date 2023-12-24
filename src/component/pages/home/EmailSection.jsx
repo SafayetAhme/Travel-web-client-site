@@ -5,8 +5,10 @@ const EmailSection = () => {
         <div>
             <div className="py-20">
                 <div className="hero-content gap-14 grid md:grid-cols-2">
-                    <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/0qjWXGD/Group-25.png)' }}>
-                        <img src="https://i.ibb.co/s1y195D/Group-23.png" className="" />
+                    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                        <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/0qjWXGD/Group-25.png)' }}>
+                            <img src="https://i.ibb.co/s1y195D/Group-23.png" className="transition duration-300 ease-in-out hover:scale-110" alt="Louvre" />
+                        </div>
                     </div>
                     <div>
                         <h1 className="font-medium text-gray-500 pb-1">SUPERCHARGE YOUR PLANNING POWERS</h1>

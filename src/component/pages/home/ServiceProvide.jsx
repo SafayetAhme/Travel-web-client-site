@@ -3,6 +3,9 @@
 const ServiceProvide = () => {
     return (
         <div>
+            <div className=" text-center">
+                <button className="btn mt-0 mb-10 w-[140px] bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View All</button>
+            </div>
             <div className="py-12">
                 <div className="grid items-center md:grid-cols-2 px-12">
                     <div>

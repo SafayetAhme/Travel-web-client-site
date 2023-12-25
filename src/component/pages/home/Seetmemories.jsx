@@ -28,10 +28,10 @@ const Seetmemories = () => {
                                 <h1 className="text-xl -mt-5 leading-6 text-[#727778] font-normal">Happy<br />Customer</h1>
                             </div>
                         </div>
-                        <button className=" mt-8 px-8 py-3 bg-slate-200 relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                        <button className=" mt-8 px-8 py-3 bg-[#12D1E5] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
                             {/* purple box */}
                             <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
-                            <span className="w-full font-medium text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
                                 Expolore More
                             </span>
                         </button>

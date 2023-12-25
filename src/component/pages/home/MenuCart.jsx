@@ -17,13 +17,15 @@ const MenuCart = () => {
 
     return (
         <div>
-            <div>
+            <div className="pt-6">
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                    <TabList>
-                        <Tab>Thailand</Tab>
-                        <Tab>Privateship</Tab>
-                        <Tab>Switzerland</Tab>
-                    </TabList>
+                    <div className="text-center">
+                        <TabList>
+                            <Tab>Thailand</Tab>
+                            <Tab>Privateship</Tab>
+                            <Tab>Switzerland</Tab>
+                        </TabList>
+                    </div>
                     <TabPanel>
                         <div className="flex gap-4">
                             {

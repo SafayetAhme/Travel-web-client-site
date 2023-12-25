@@ -1,7 +1,21 @@
 import { Helmet } from "react-helmet-async";
+import UseAxiosPublic from "../../hooks/UseAxiosPublic";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Blog = () => {
+    const [blogs, setMenu] = useState([]);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        fetch('http://localhost:5000/blogs')
+            .then(res => res.json())
+            .then(data => {
+                setMenu(data);
+                setLoading(false);
+            })
+    }, [])
+
     return (
         <div className="px-12">
             <Helmet>
@@ -25,115 +39,34 @@ const Blog = () => {
                         <p className="pt-4 text-[#464b4b]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi <br /> In deleniti eaque aut repudiandae et a id nisi.</p>
                     </div>
 
-                    {/*  */}
+                    {/* items */}
                     <div className="grid gap-6 pb-6 md:grid-cols-2">
-                        <div className=" w-full rounded-2xl bg-base-100 shadow-xl">
-                            <figure><img className="h-[250px] w-full rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" /></figure>
-                            <div className="">
-                                <div className="p-4">
-                                    <h2 className="text-start font-bold pb-2">Dream Destinations To Visit This Year In Paris</h2>
-                                    <h2 className="text-start text-base">Lorem ipsum dolor, sit sitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsit amet kfjasdk asdfk adipisicing elit. Reprehenderit,</h2>
-                                    <div className=" flex pt-4 gap-2">
-                                        <img className="w-[50px] h-[50px] rounded-full" src="" alt="" />
-                                        <div className=" text-start">
-                                            <h1 className=" text-xl font-medium">Safayet Ahmed</h1>
-                                            <h1>Ui UX designer</h1>
+                        {
+                            blogs.map(blog =>
+                                <div key={blog.id} className=" w-full rounded-2xl bg-base-100 shadow-xl">
+                                    <Link to={`/blogdetails/${blog._id}`}>
+                                        <figure><img className="h-[250px] w-full rounded-2xl" src={blog.image} /></figure>
+                                    </Link>
+                                    <div className="">
+                                        <div className="p-4">
+                                            <h2 className="text-start font-bold pb-2">{blog.maintitle}</h2>
+                                            <h2 className="text-start text-base">{blog.descriptionOne}</h2>
+                                            <div className=" flex pt-4 gap-2">
+                                                <img className="w-[50px] h-[50px] rounded-full" src={blog.profileimg} alt="" />
+                                                <div className=" text-start">
+                                                    <h1 className=" text-xl font-medium">{blog.name}</h1>
+                                                    <h1>{blog.title}</h1>
+                                                </div>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
+                            )
+                        }
 
-                            </div>
-                        </div>
-                        <div className=" w-full rounded-2xl bg-base-100 shadow-xl">
-                            <figure><img className="h-[250px] w-full rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" /></figure>
-                            <div className="">
-                                <div className="p-4">
-                                    <h2 className="text-start font-bold pb-2">Dream Destinations To Visit This Year In Paris</h2>
-                                    <h2 className="text-start text-base">Lorem ipsum dolor, sit sitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsit amet kfjasdk asdfk adipisicing elit. Reprehenderit,</h2>
-                                    <div className=" flex pt-4 gap-2">
-                                        <img className="w-[50px] h-[50px] rounded-full" src="" alt="" />
-                                        <div className=" text-start">
-                                            <h1 className=" text-xl font-medium">Safayet Ahmed</h1>
-                                            <h1>Ui UX designer</h1>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
-                    <div className="grid gap-6 pb-6 md:grid-cols-2">
-                        <div className=" w-full rounded-2xl bg-base-100 shadow-xl">
-                            <figure><img className="h-[250px] w-full rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" /></figure>
-                            <div className="">
-                                <div className="p-4">
-                                    <h2 className="text-start font-bold pb-2">Dream Destinations To Visit This Year In Paris</h2>
-                                    <h2 className="text-start text-base">Lorem ipsum dolor, sit sitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsit amet kfjasdk asdfk adipisicing elit. Reprehenderit,</h2>
-                                    <div className=" flex pt-4 gap-2">
-                                        <img className="w-[50px] h-[50px] rounded-full" src="" alt="" />
-                                        <div className=" text-start">
-                                            <h1 className=" text-xl font-medium">Safayet Ahmed</h1>
-                                            <h1>Ui UX designer</h1>
-                                        </div>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
-                        <div className=" w-full rounded-2xl bg-base-100 shadow-xl">
-                            <figure><img className="h-[250px] w-full rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" /></figure>
-                            <div className="">
-                                <div className="p-4">
-                                    <h2 className="text-start font-bold pb-2">Dream Destinations To Visit This Year In Paris</h2>
-                                    <h2 className="text-start text-base">Lorem ipsum dolor, sit sitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsit amet kfjasdk asdfk adipisicing elit. Reprehenderit,</h2>
-                                    <div className=" flex pt-4 gap-2">
-                                        <img className="w-[50px] h-[50px] rounded-full" src="" alt="" />
-                                        <div className=" text-start">
-                                            <h1 className=" text-xl font-medium">Safayet Ahmed</h1>
-                                            <h1>Ui UX designer</h1>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="grid gap-6 pb-6 md:grid-cols-2">
-                        <div className=" w-full rounded-2xl bg-base-100 shadow-xl">
-                            <figure><img className="h-[250px] w-full rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" /></figure>
-                            <div className="">
-                                <div className="p-4">
-                                    <h2 className="text-start font-bold pb-2">Dream Destinations To Visit This Year In Paris</h2>
-                                    <h2 className="text-start text-base">Lorem ipsum dolor, sit sitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsit amet kfjasdk asdfk adipisicing elit. Reprehenderit,</h2>
-                                    <div className=" flex pt-4 gap-2">
-                                        <img className="w-[50px] h-[50px] rounded-full" src="" alt="" />
-                                        <div className=" text-start">
-                                            <h1 className=" text-xl font-medium">Safayet Ahmed</h1>
-                                            <h1>Ui UX designer</h1>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className=" w-full rounded-2xl bg-base-100 shadow-xl">
-                            <figure><img className="h-[250px] w-full rounded-2xl" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" /></figure>
-                            <div className="">
-                                <div className="p-4">
-                                    <h2 className="text-start font-bold pb-2">Dream Destinations To Visit This Year In Paris</h2>
-                                    <h2 className="text-start text-base">Lorem ipsum dolor, sit sitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsit amet kfjasdk asdfk adipisicing elit. Reprehenderit,</h2>
-                                    <div className=" flex pt-4 gap-2">
-                                        <img className="w-[50px] h-[50px] rounded-full" src="" alt="" />
-                                        <div className=" text-start">
-                                            <h1 className=" text-xl font-medium">Safayet Ahmed</h1>
-                                            <h1>Ui UX designer</h1>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -34,6 +34,7 @@ import Paymenthhistory from './component/pages/dashboard/Paymenthhistory';
 import ManageItems from './component/pages/dashboard/ManageItems';
 import UpdateItems from './component/pages/dashboard/UpdateItems';
 import Paymenth from './component/pages/dashboard/Paymenth';
+import BlogDetails from './component/pages/blog/BlogDetails';
 
 const queryClient = new QueryClient()
 
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs></AboutUs>
+      },
+      {
+        path: "/blogdetails/:id",
+        element: <BlogDetails></BlogDetails>,
+        loader: () => fetch('http://localhost:5000/blogs')
       },
       {
         path: "/blog",

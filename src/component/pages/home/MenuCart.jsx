@@ -57,7 +57,13 @@ const MenuCart = () => {
                                                 </div>
                                                 <Link to={`/details/${item._id}`}>
                                                     <div className="card-actions justify-end">
-                                                        <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View Details</button>
+                                                        <button className=" mt-3 w-full py-3 bg-[#12d0e5bb] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                                            {/* purple box */}
+                                                            <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                                View Details
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </Link>
                                             </div>
@@ -99,7 +105,13 @@ const MenuCart = () => {
                                                 </div>
                                                 <Link to={`/details/${item._id}`}>
                                                     <div className="card-actions justify-end">
-                                                        <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View Details</button>
+                                                        <button className=" mt-3 w-full py-3 bg-[#12d0e5bb] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                                            {/* purple box */}
+                                                            <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                                View Details
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </Link>
                                             </div>
@@ -141,7 +153,13 @@ const MenuCart = () => {
                                                 </div>
                                                 <Link to={`/details/${item._id}`}>
                                                     <div className="card-actions justify-end">
-                                                        <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View Details</button>
+                                                        <button className=" mt-3 w-full py-3 bg-[#12d0e5bb] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                                            {/* purple box */}
+                                                            <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                                View Details
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </Link>
                                             </div>
@@ -153,7 +171,20 @@ const MenuCart = () => {
                     </TabPanel>
                 </Tabs>
             </div>
-
+            <div className="md:flex justify-between">
+                <svg class="animate-bounce  bg-gradient-to-r from-cyan-300 to-[#0bf3b9f1]   rounded-sm w-8 h-8 ...">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20L12 4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17 15C17 15 13.3176 20 12 20C10.6824 20 7 15 7 15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </svg>
+                <svg class="animate-bounce  bg-gradient-to-r from-cyan-400 to-[#0b83f3d1]  rounded-sm w-8 h-8 ...">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20L12 4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17 15C17 15 13.3176 20 12 20C10.6824 20 7 15 7 15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </svg>
+            </div>
         </div>
     );
 };

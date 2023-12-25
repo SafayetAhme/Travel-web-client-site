@@ -58,7 +58,16 @@ const ContactUs = () => {
                             <input type="number" placeholder="phone (optional)" className="input input-bordered w-full " />
                         </div>
                         <textarea placeholder="Message" name="message" className="textarea textarea-bordered textarea-lg w-full" ></textarea>
-                        <button className="btn mt-8 px-8 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">SEND MESSAGE</button>
+
+                        <div className="card-actions justify-end">
+                            <button className=" mt-3 w-full py-3 bg-[#12d0e5bb] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                {/* purple box */}
+                                <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                    Send Message
+                                </span>
+                            </button>
+                        </div>
 
                     </div>
                     <div className="">

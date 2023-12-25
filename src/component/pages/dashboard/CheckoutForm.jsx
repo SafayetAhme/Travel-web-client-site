@@ -86,7 +86,7 @@ const CheckoutForm = () => {
 
                 const res = await axisoSecure.post('/payments', payment);
                 console.log('payment saved', res.data);
-                if(res.data?.paymentResult?.insertedId){
+                if (res.data?.paymentResult?.insertedId) {
                     alert('successfull')
                 }
 
@@ -116,10 +116,16 @@ const CheckoutForm = () => {
                 {/* Display error message if there's an error */}
                 {error && <div style={{ color: 'red' }}>{error}</div>}
                 <div className="text-center">
-                    <button className="bg-blue-600 px-24 py-3 rounded-md text-white text-2xl my-12" type="submit"
-                        disabled={!stripe || !clientSecret}>
-                        Pay
-                    </button>
+                    <div className="card-actions justify-center">
+                        <button className=" mt-3 px-16 py-3 bg-[#12d0e5] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                            {/* purple box */}
+                            <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+                                disabled={!stripe || !clientSecret}>
+                                Pay
+                            </span>
+                        </button>
+                    </div>
                     <p className="text-red-600">{error}</p>
                     {transactionId && <p className="text-green-600">yoru transaction id: {transactionId}</p>}
                 </div>

@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom";
 
 
 const ServiceProvide = () => {
     return (
         <div>
             <div className=" text-center">
-                <button className="btn mt-0 mb-10 w-[140px] bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View All</button>
+                <Link to="/tours">
+                    <button className=" px-10 py-3 bg-[#12d0e5bb] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                        {/* purple box */}
+                        <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                        <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                            View All
+                        </span>
+                    </button>
+                </Link>
             </div>
             <div className="py-12">
                 <div className="grid items-center md:grid-cols-2 px-12">
@@ -18,9 +27,17 @@ const ServiceProvide = () => {
 
                         <h1 className="text-2xl font-bold pb-2"><span className="text-[#12D1E5]">03.</span>  Accommodation</h1>
                         <p className="">Lodging, food and services or travelling space and related services <br /> usually used in plural</p>
-                        <button className="btn mt-8 w-[200px] bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">Expolore More</button>
+                        <button className=" px-12 mt-6 py-3 bg-[#12d0e5bb] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                            {/* purple box */}
+                            <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                Expolore More
+                            </span>
+                        </button>
                     </div>
-                    <img src="https://i.ibb.co/zSN671p/Group-19.png" className="w-full" />
+                    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                        <img src="https://i.ibb.co/zSN671p/Group-19.png" className="w-full transition duration-300 ease-in-out hover:scale-110 " />
+                    </div>
                 </div>
             </div>
         </div>

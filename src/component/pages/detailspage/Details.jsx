@@ -131,7 +131,13 @@ const Details = () => {
                                                     </div>
                                                     <Link to={`/details/${item._id}`}>
                                                         <div className="card-actions justify-end">
-                                                            <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View Details</button>
+                                                            <button className=" mt-3 w-full py-3 bg-[#12d0e5] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                                                {/* purple box */}
+                                                                <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                                                <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                                    View Details
+                                                                </span>
+                                                            </button>
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -175,7 +181,13 @@ const Details = () => {
                                                     </div>
                                                     <Link to={`/details/${item._id}`}>
                                                         <div className="card-actions justify-end">
-                                                            <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View Details</button>
+                                                            <button className=" mt-3 w-full py-3 bg-[#12d0e5] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                                                {/* purple box */}
+                                                                <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                                                <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                                    View Details
+                                                                </span>
+                                                            </button>
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -219,7 +231,13 @@ const Details = () => {
                                                     </div>
                                                     <Link to={`/details/${item._id}`}>
                                                         <div className="card-actions justify-end">
-                                                            <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">View Details</button>
+                                                            <button className=" mt-3 w-full py-3 bg-[#12d0e5] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                                                {/* purple box */}
+                                                                <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                                                <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                                    View Details
+                                                                </span>
+                                                            </button>
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -280,7 +298,13 @@ const Details = () => {
                                 </div>
                                 <Link to="/payment">
                                     <div className="card-actions justify-end">
-                                        <button className="btn w-full bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">Book Now</button>
+                                        <button className=" mt-0 w-full py-3 bg-[#12d0e5] relative inline-flex items-center justify-start overflow-hidden transition-all rounded hover:bg-white group">
+                                            {/* purple box */}
+                                            <span className="w-0 h-0 rounded bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff]  hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                            <span className="w-full font-medium text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                                Book Now
+                                            </span>
+                                        </button>
                                     </div>
                                 </Link>
                             </div>

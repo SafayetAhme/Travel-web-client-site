@@ -3,7 +3,7 @@
 const EmailSection = () => {
     return (
         <div>
-            <div className="py-20">
+            <div className="pb-20 pt-12">
                 <div className="hero-content gap-14 grid md:grid-cols-2">
                     <div class="relative overflow-hidden bg-cover bg-no-repeat">
                         <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/0qjWXGD/Group-25.png)' }}>
@@ -18,9 +18,9 @@ const EmailSection = () => {
                             <input type="text" placeholder="Enter your email" className="input input-bordered bg-[#ecf0f0d5] border-none outline-none w-full max-w-xs" />
                             <div className=" bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ...  -ml-[44px] h-fit w-fit p-2  rounded-md">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 18L20 6" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M16 11.9995L4 11.9995" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M12 8C12 8 16 10.946 16 12C16 13.0541 12 16 12 16" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20 18L20 6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M16 11.9995L4 11.9995" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 8C12 8 16 10.946 16 12C16 13.0541 12 16 12 16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                         </div>

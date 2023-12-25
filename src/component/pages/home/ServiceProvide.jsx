@@ -16,7 +16,7 @@ const ServiceProvide = () => {
                 </Link>
             </div>
             <div className="py-12">
-                <div className="grid items-center md:grid-cols-2 px-12">
+                <div className="grid items-center gap-12 md:gap-0 md:grid-cols-2 px-12">
                     <div>
                         <h1 className="text-5xl leading-tight pb-8 font-bold">What <span className="text-[#12D1E5]">Service</span> We Provide</h1>
                         <h1 className="text-2xl font-bold pb-2"><span className="text-[#12D1E5]">01.</span> Travel Plan</h1>

@@ -67,7 +67,7 @@ const AddItems = () => {
                             required
                             className="input input-bordered w-full" />
                     </div>
-                    <div className="flex gap-6">
+                    <div className="md:flex gap-6">
                         <div className="form-control w-full my-6">
                             <label className="label">
                                 <span className="label-text">hwo many star or ratting</span>

@@ -110,7 +110,7 @@ const AboutUs = () => {
             {/* 4 */}
             <div className="grid pb-16 px-12 gap-12 items-center pt-16 md:grid-cols-2">
                 <div>
-                    <div className="carousel w-full">
+                    <div className="carousel w-[410px] md:w-full">
                         <div id="slide1" className="carousel-item relative w-full">
                             <div className="pb-20">
                                 <h1 className="text-3xl font-bold">What Our <span className="text-[#12D1E5]">Customer's</span> <br />Say About Us</h1>
@@ -226,7 +226,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div>
-                    <img className="rounded-xl" src="https://i.ibb.co/WfD7cCp/Group-20.png" alt="" />
+                    <img className="rounded-xl md:w-full w-[400px]" src="https://i.ibb.co/WfD7cCp/Group-20.png" alt="" />
                 </div>
             </div>
         </div>

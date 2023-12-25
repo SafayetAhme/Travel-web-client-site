@@ -35,7 +35,7 @@ const Tours = () => {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md py-12">
                         <h1 className="mb-5 text-4xl font-bold">Tour Package</h1>
-                        <div className="card-actions justify-end">
+                        <div className="card-actions justify-center">
                             <Link to="/">
                                 <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">Back to Home</button>
                             </Link>
@@ -46,7 +46,7 @@ const Tours = () => {
 
             {/*  */}
             <div className="px-12">
-                <div className="grid grid-cols-4 gap-12">
+                <div className="grid md:grid-cols-4 gap-12">
                     <div className="bg-slate-100 h-fit rounded-lg p-4 col-span-1">
                         <h1 className="text-xl font-bold">Search</h1>
                         <div className="flex pt-2 pb-8 items-center">

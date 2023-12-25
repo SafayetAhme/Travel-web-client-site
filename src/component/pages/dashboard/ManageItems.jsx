@@ -50,7 +50,7 @@ const ManageItems = () => {
             </div>
             <div className="pl-2 pr-12">
                 <thead>
-                    <tr className="flex gap-48 pb-8 text-blue-600">
+                    <tr className="flex md:gap-48 pb-8 text-blue-600">
                         <th>
                             Number
                         </th>
@@ -62,7 +62,7 @@ const ManageItems = () => {
                 </thead>
                 <div>
                     {
-                        menus.map((item, index) => <div className="flex ">
+                        menus.map((item, index) => <div className="md:flex ">
                             <th className="">
                                 {index + 1}
                             </th>
@@ -76,7 +76,7 @@ const ManageItems = () => {
                             <div className="pb-12">
                                 <div className="flex gap-36  items-end">
                                     <h1 className="font-bold text-blue-600">{item.Price}</h1>
-                                    <div className="flex gap-12">
+                                    <div className="flex gap-2 md:gap-12">
                                         <div>
                                             <Link to={`/dashboard/updateitems/${item._id}`}>
                                                 <button

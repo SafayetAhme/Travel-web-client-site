@@ -14,7 +14,7 @@ const ContactUs = () => {
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md py-12">
                             <h1 className="mb-5 text-4xl text-white font-bold">Contact Us</h1>
-                            <div className="card-actions justify-end">
+                            <div className="card-actions justify-center">
                                 <Link to="/">
                                     <button className="btn w-full mt-4 bg-[#12D1E5] border-[#12D1E5] text-white hover:bg-[#04e6ff] outline-none hover:border-[#04e6ff] shadow-lg shadow-cyan-500/50 ... ">Back to Home</button>
                                 </Link>
@@ -23,7 +23,7 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <div className="justify-center flex gap-8">
+                <div className="justify-center md:flex gap-8">
                     <div className="flex items-center">
                         <img className="w-[140px]" src="https://i.ibb.co/WxjYVwx/Group-52.png" alt="" />
                         <div className="-ml-5 pb-7">
@@ -47,8 +47,8 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <div className="grid px-16 gap-6 py-16 grid-cols-2">
-                    <div>
+                <div className="grid px-10 gap-6 py-16 md:grid-cols-2">
+                    <div className="md:w-full w-[400px]">
                         <h1 className="text-4xl font-bold pb-6">Send Us A Message</h1>
                         <div className="flex gap-4 pb-4">
                             <input type="name" name="name" placeholder="name" className="input input-bordered w-full " />
@@ -73,7 +73,7 @@ const ContactUs = () => {
                     <div className="">
                         <h1 className="text-4xl font-bold pb-6">Location</h1>
                         <div>
-                            <div className="mapouter"><div className="gmap_canvas"><iframe width="564" height="410" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a></div></div>
+                            <div className="mapouter"><div className="gmap_canvas"><iframe className="md:w-full w-[400px]" width="564" height="410" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a></div></div>
                         </div>
                     </div>
                 </div>

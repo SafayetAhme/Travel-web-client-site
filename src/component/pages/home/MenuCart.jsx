@@ -27,7 +27,7 @@ const MenuCart = () => {
                         </TabList>
                     </div>
                     <TabPanel>
-                        <div className="flex gap-4">
+                        <div className="md:flex gap-4">
                             {
                                 thailand.map(item =>
                                     <div key={item.id} className="grid pb-12 pt-1 gap-5 md:grid-cols-3">
@@ -76,7 +76,7 @@ const MenuCart = () => {
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className="flex gap-4">
+                        <div className="md:flex gap-4">
                             {
                                 Privateship.map(item =>
                                     <div key={item.id} className="grid pb-12 pt-1 gap-5 md:grid-cols-3">
@@ -124,7 +124,7 @@ const MenuCart = () => {
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className="flex gap-4">
+                        <div className="md:flex gap-4">
                             {
                                 Switzerland.map(item =>
                                     <div key={item.id} className="grid pb-12 pt-1 gap-5 md:grid-cols-3">

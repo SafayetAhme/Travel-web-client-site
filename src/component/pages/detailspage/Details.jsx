@@ -34,8 +34,8 @@ const Details = () => {
     const Switzerland = details.filter(item => item.category === 'Switzerland');
     return (
         <div>
-            <div className="grid md:grid-cols-4 gap-8 px-10 pt-8">
-                <div className="col-span-3">
+            <div className="grid md:grid-cols-4 grid-cols-1 gap-8 px-10 pt-8">
+                <div className="md:col-span-3">
                     <div>
                         <Swiper
                             rewind={true}
@@ -73,7 +73,7 @@ const Details = () => {
                                                 <div className="">
                                                     <div className=" gap-96 text-">
                                                         <h1 className="font-medium pb-4 text-xl text-black">{review.title}</h1>
-                                                        <div className="flex gap-44">
+                                                        <div className="flex gap-6 md:gap-44">
                                                             <p>{review.description}</p>
                                                             <p className="w-[199px] justify-start">{review.commentDate}</p>
                                                         </div>
@@ -91,7 +91,7 @@ const Details = () => {
                         <div>
                             <h1 className="text-3xl pt-8 font-bold pb-6">Find the place <span className="text-[#4bcce6]">with the map</span></h1>
                             <div className="">
-                                <div className="mapouter w-full"><div className="gmap_canvas w-full"><iframe width="910" height="410" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a></div></div>
+                                <div className="mapouter w-full"><div className="gmap_canvas w-full"><iframe className="w-[400px] md:w-full" width="910" height="410" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a></div></div>
                             </div>
                         </div>
 
@@ -100,7 +100,7 @@ const Details = () => {
 
                         {/* this cart for thilend */}
                         <div>
-                            <div className=" flex gap-5 pb-5">
+                            <div className=" md:flex md:gap-5 gap-5 pb-5">
                                 {
                                     Switzerland.map(item =>
                                         <div key={item.id} className="">
@@ -150,7 +150,7 @@ const Details = () => {
 
                         {/* this cart for thilend */}
                         <div>
-                            <div className=" flex gap-5 pb-5">
+                            <div className=" md:flex gap-5 pb-5">
                                 {
                                     thailand.map(item =>
                                         <div key={item.id} className="">
@@ -200,7 +200,7 @@ const Details = () => {
 
                         {/* this cart for Switzerland */}
                         <div>
-                            <div className=" flex gap-5 pb-5">
+                            <div className=" md:flex gap-5 pb-5">
                                 {
                                     Privateship.map(item =>
                                         <div key={item.id} className="">

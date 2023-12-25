@@ -5,7 +5,7 @@ const Review = () => {
         <div>
             <div className="grid gap-12 items-center pt-28 md:grid-cols-2">
                 <div>
-                    <div className="carousel w-full">
+                    <div className="carousel w-[410px] md:w-full">
                         <div id="slide1" className="carousel-item relative w-full">
                             <div className="pb-20">
                                 <h1 className="text-3xl font-bold">What Our <span className="text-[#12D1E5]">Customer's</span> <br />Say About Us</h1>
@@ -121,7 +121,7 @@ const Review = () => {
                     </div>
                 </div>
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                    <img className="rounded-xl transition duration-300 ease-in-out hover:scale-110" src="https://i.ibb.co/WfD7cCp/Group-20.png" alt="" />
+                    <img className="rounded-xl md:w-full w-[410px] transition duration-300 ease-in-out hover:scale-110" src="https://i.ibb.co/WfD7cCp/Group-20.png" alt="" />
                 </div>
             </div>
             <div className="md:flex pt-12 justify-between">

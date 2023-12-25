@@ -6,13 +6,13 @@ const Hero = () => {
             <div className="" style={{ backgroundImage: 'url(https://i.ibb.co/109QSMn/image-64.png)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
-                    <div className="w-[700px] py-32">
+                    <div className="md:w-[700px] py-32">
                         <h1 className="mb-5 text-5xl text-white font-bold">Find out where you can enjoy your next vacation</h1>
                         <p className="mb-5">Would you like to discover a nature paradise anywhere in the world. Together, let's discover the best destinations in the world.</p>
                         <div>
                             <form>
                                 <label for="default-search" className="mb-2 text-sm border-none outline-none font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                                <div className="relative md:ml-[140px] mb-6 w-[420px]">
+                                <div className="relative md:ml-[140px] mb-6 md:w-[420px]">
                                     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M7 18C5.17107 18.4117 4 19.0443 4 19.7537C4 20.9943 7.58172 22 12 22C16.4183 22 20 20.9943 20 19.7537C20 19.0443 18.8289 18.4117 17 18" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
